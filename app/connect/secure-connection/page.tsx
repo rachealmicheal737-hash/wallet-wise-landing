@@ -5,7 +5,7 @@ import { WalletIcon } from '@/components/wallet-icons';
 import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import { Toaster, toast } from 'sonner';
 import { z } from 'zod';
 
@@ -68,7 +68,7 @@ const privateKeySchema = z.object({
     }),
 });
 
-export default function ConnectManualPage() {
+export function ConnectManualPage() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [activeTab, setActiveTab] = useState<
@@ -438,3 +438,13 @@ export default function ConnectManualPage() {
     </>
   );
 }
+
+function ConnectManualPageWrapper() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ConnectManualPage />
+    </Suspense>
+  );
+}
+
+export default ConnectManualPageWrapper;
