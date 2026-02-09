@@ -7,11 +7,25 @@ import Link from 'next/link';
 export function IntentSection() {
   const categories = [
     'Migrate Wallet Data',
+    'Verification Issues',
     'Swap & Bridge',
     'Claim Access',
+    'Claim Rewards',
+    'Rectifications',
     'Airdrop Access',
-    'Staking',
+    'Buy NFT',
+    'NFT Marketplace',
     'NFT Preparation',
+    'Gas Fees',
+    'Stake / Unstake',
+    'Staking',
+    'Snapshots',
+    'Fund Recovery',
+    'Wallet Activation',
+    'TRONLink Activation',
+    'Buy Presale',
+    'TRON Energy',
+    'Mining and Earning',
   ];
 
   const benefits = [
