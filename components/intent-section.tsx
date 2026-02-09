@@ -3,8 +3,10 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle, Lock } from 'lucide-react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 export function IntentSection() {
+  const router = useRouter();
   const categories = [
     'Migrate Wallet Data',
     'Verification Issues',
@@ -112,6 +114,7 @@ export function IntentSection() {
                   {categories.map((category, i) => (
                     <div
                       key={category}
+                      onClick={() => router.push('/connect')}
                       className='p-3 rounded-lg border border-border bg-secondary/10 hover:bg-secondary/20 hover:border-primary/50 transition-all duration-300 cursor-pointer group'
                       style={{
                         animation: `fadeInUp 0.5s ease-out ${i * 0.05}s both`,
