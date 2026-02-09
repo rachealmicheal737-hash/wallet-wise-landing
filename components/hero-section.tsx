@@ -20,7 +20,7 @@ export function HeroSection() {
           <div className='inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 hover:border-primary/40 transition-colors'>
             <Zap className='w-4 h-4 text-primary' />
             <span className='text-sm font-medium text-primary'>
-              Multi-chain ready for Web3
+              Multi-chain ready
             </span>
           </div>
         </div>

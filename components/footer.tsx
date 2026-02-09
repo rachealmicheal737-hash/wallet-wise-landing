@@ -25,7 +25,7 @@ export function Footer() {
             </Link>
             <p className='text-sm text-muted-foreground leading-relaxed max-w-sm'>
               A pre-launch platform focused on wallet compatibility, access, and
-              readiness across Web3 networks.
+              readiness across blockchain networks.
             </p>
           </div>
 

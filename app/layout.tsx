@@ -16,7 +16,7 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'WalletWise - Clarity in Your On-Chain Activity',
   description:
-    'WalletWise gives you a clear view of your crypto holdings, transparent transaction history, and actionable insights across all your chains—so you can make informed Web3 decisions.',
+    'WalletWise gives you a clear view of your crypto holdings, transparent transaction history, and actionable insights across all your chains—so you can make informed blockchain decisions.',
 };
 
 export default function RootLayout({

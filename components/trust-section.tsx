@@ -47,7 +47,7 @@ export function TrustSection() {
             <p className='text-lg text-muted-foreground leading-relaxed flex items-start gap-3'>
               <Users className='w-5 h-5 text-primary flex-shrink-0 mt-1' />
               Millions of users rely on secure and well-established wallets to
-              manage assets and interact with Web3 across multiple blockchains.
+              manage assets and interact across multiple blockchains.
             </p>
             <p className='text-lg text-muted-foreground leading-relaxed'>
               WalletWise supports a wide range of wallets and networks using
